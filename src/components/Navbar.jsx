@@ -10,20 +10,20 @@ const Navbar = () => {
        
        <ul className='hidden md:flex items-start gap-5 font-medium'>
         <NavLinkvLink>
-          <li>Home</li>
-          <hr />
+          <li className='py-1'>Home</li>
+          <hr className='boader-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLinkvLink>
         <NavLinkvLink>
-          <li>All Doctors</li>
-          <hr />
+          <li className='py-1'>All Doctors</li>
+          <hr className='boader-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLinkvLink>
         <NavLinkvLink>
-          <li>About</li>
-          <hr />
+          <li className='py-1'>About</li>
+          <hr className='boader-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLinkvLink>
         <NavLinkvLink>
-          <li>Contact</li>
-          <hr />
+          <li className='py-1'>Contact</li>
+          <hr className='boader-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
         </NavLinkvLink>
        </ul>
        <div>
