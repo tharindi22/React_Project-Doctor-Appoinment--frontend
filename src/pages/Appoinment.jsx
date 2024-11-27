@@ -17,10 +17,9 @@ const Appoinment = () => {
   const fetchDocInfo = async () => {
     const docInfo = doctors.find(doc => doc._id === docId )
     setDocInfo(docInfo)
-    
   }
 
-  const getAvailableSlot = async () => {
+  const getAvailableSlots = async () => {
     setDocSlots([])
 
      //getting current date
@@ -28,7 +27,7 @@ const Appoinment = () => {
 
     for (let i = 0; i < 7; i++) {
        // getting date with index
-       let currentDate =new Date(today)
+       let currentDate = new Date(today)
        currentDate.setDate(today.getDate()+i)
 
       //setting end time of the date with index
@@ -46,7 +45,7 @@ const Appoinment = () => {
 
       }
 
-      let timeSlots =[]
+      let timeSlots = []
 
       while(currentDate < endTime){
         let formattedTime = currentDate.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})
@@ -72,7 +71,7 @@ const Appoinment = () => {
   },[doctors,docId])
 
   useEffect(()=>{
-    getAvailableSlot()
+    getAvailableSlots()
   },[docInfo])
 
   useEffect(()=>{
