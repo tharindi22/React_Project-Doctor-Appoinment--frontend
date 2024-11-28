@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 const MyApponments = () => {
+
+  const {doctors} = useContext(AppContext)
+
   return (
     <div>
-        
+       <p>My appointments</p> 
+       <div></div>
     </div>
   )
 }
