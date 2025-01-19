@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 import { assets } from '../assets/assets'
 import RelatedDoctors from '../components/RelatedDoctors'
+import { useNavigate } from 'react-router-dom'
 
 const Appoinment = () => {
   const { docId } = useParams()
@@ -78,7 +79,7 @@ const Appoinment = () => {
     console.log(docSlots)
   },[docSlots])
 
-
+  const navigate = useNavigate()
 
   return docInfo && (
     <div>
@@ -130,7 +131,7 @@ const Appoinment = () => {
               </p>
             ))}
           </div>
-          <button className='bg-primary text-white text-sm font-lighgt px-14 py-3 rounded-full my-6'>Book an Appoinment</button>
+          <button onClick={()=>{navigate('/my-appoinments'); scrollTo(0,0)}} className='bg-primary text-white text-sm font-lighgt px-14 py-3 rounded-full my-6'>Book an Appoinment</button>
       </div>
 
       {/* -----Listning relatde Doctors------ */}

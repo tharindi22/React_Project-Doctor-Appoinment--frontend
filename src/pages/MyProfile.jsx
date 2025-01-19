@@ -6,11 +6,11 @@ const MyProfile = () => {
   const [userData,setUserData] = useState({
     name:"Edward Vincent",
     image:assets.profile_pic,
-    email:'richardjameswap@gmail.com',
-    phone:'+1  123 456 7890',
+    email:'richardjame@gmail.com',
+    phone:'0711234567',
     address:{
-      line1:"57th Cross, Richmond",
-      line2:"Circle, Church Road, London"
+      line1:"Colombo Road ,",
+      line2:"Kurunegala"
     },
     gender:'male',
     dob:'2000-10-20'
