@@ -30,6 +30,8 @@ const App = () => {
         <Route path='/appoinment/:docId' element={<Appoinment />} />
       </Routes>
 
+      
+
       <Footer/>
 
       
